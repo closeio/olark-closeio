@@ -17,9 +17,9 @@ def webhook():
     note += '\n'.join(['%s:\n%s\n---------------------------------' % (item['nickname'], item['body']) for item in data['items']])
     print note
 
-    # TODO depending on what info you have in data, figure out which lead
-    # to assign a note to. For the sake of this example, a new lead is
-    # posted with the user's nickname as the company name
+    # TODO depending on what info you have in data (i.e. what you provide via
+    # the JS API), figure out which lead to assign a note to. For the sake of
+    # this example, a new lead is posted with the user's nickname as the company name
 
     api = Client('YOUR API KEY')
     resp = api.post('lead', { 'name': data['items'][0]['nickname'] })
