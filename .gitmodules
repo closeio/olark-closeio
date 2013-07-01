@@ -1,0 +1,3 @@
+[submodule "lib/closeio-api"]
+	path = lib/closeio-api
+	url = git@github.com:elasticsales/closeio-api.git
