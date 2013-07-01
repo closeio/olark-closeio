@@ -6,6 +6,8 @@ Uses Olark webhooks to push the chat transcripts as notes into Close.io.
 Customize
 --------------------------
 
+First of all, put your Olark JS code in `templates/home.html`.
+
 Depending on the info you provide via the Olark's JS API, you need to
 customize the way you identify leads. For example, if an email of a user is
 known, you can first search for leads with that email (`/api/v1/lead/?query=email@example.com`),
